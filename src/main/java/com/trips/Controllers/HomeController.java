@@ -58,6 +58,7 @@ public class HomeController {
 	        trip1.setDescripción("Hacer rapel en los circuitos de Volcatenango");
 	        trip1.setFecha(sdf.parse("10-05-2022"));
 	        trip1.setCosto(5.0);
+	        trip1.setDestacado(1);
 
 	        Trip trip2 = new Trip();
 	        trip2.setId(2);
@@ -65,6 +66,7 @@ public class HomeController {
 	        trip2.setDescripción("Deslizarte en un divertido tobogan sobre la colina");
 	        trip2.setFecha(sdf.parse("10-05-2022"));
 	        trip2.setCosto(5.0);
+	        trip2.setDestacado(0);
 
 	        Trip trip3 = new Trip();
 	        trip3.setId(3);
@@ -72,13 +74,15 @@ public class HomeController {
 	        trip3.setDescripción("Disfrutar de un amplio jardin el cual podras comprar");
 	        trip3.setFecha(sdf.parse("10-05-2022"));
 	        trip3.setCosto(1.0);
+	        trip3.setDestacado(1);
 
 	        Trip trip4 = new Trip();
 	        trip4.setId(4);
 	        trip4.setNombre_trip("Caminatas");
 	        trip4.setDescripción("Disfruta hacer senderismo por las montañas chalatecas");
 	        trip4.setFecha(sdf.parse("01-02-2022"));
-	        trip3.setCosto(1.0);
+	        trip4.setCosto(1.0);
+	        trip4.setDestacado(0);
 
 	        lista.add(trip1);
 	        lista.add(trip2);

@@ -13,6 +13,7 @@ public class Trip {
 	private boolean activo;
 	private Date fecha;
 	private int IdCategoria;
+	private Integer destacado;
 	
 	public Integer getId() {
 		return id;
@@ -73,5 +74,11 @@ public class Trip {
 	}
 	public void setIdCategoria(int idCategoria) {
 		IdCategoria = idCategoria;
+	}
+	public Integer getDestacado() {
+		return destacado;
+	}
+	public void setDestacado(Integer destacado) {
+		this.destacado = destacado;
 	}
 }
