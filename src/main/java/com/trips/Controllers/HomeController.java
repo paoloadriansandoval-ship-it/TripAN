@@ -1,5 +1,4 @@
 package com.trips.Controllers;
-import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -19,14 +18,8 @@ public class HomeController {
 		
 	@GetMapping("/")
 	public String mostrarHome(Model model) {
-		String trip = "Rapel en el Volcan";
-		Date fechaPublicacion = new Date();
-		double costo = 5.0;
-		boolean vigente = true;
-		model.addAttribute("trip", trip);
-		model.addAttribute("fechaPublicacion", fechaPublicacion);
-		model.addAttribute("costo", costo);
-		model.addAttribute("vigente", vigente);
+		List<Trip> lista = tripServices.buscarTodo();
+		model.addAttribute("trips", lista);
 		return "home";
 	}
 	@GetMapping("/Listado")

@@ -8,6 +8,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.tripsModels.Trip;
+
 @Service
 public class TripServicesImpl implements ITripServices{
 	List<Trip> lista = null;
