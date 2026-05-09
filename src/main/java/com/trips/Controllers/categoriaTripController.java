@@ -17,13 +17,13 @@ public class categoriaTripController {
 	//@RequestMapping(value="/create", method=RequestMethod.GET)
 	@GetMapping("/create")
 	public String crear() {
-		return "categoriasTrip/listCategoria";
+		return "categoriasTrip/formCategoria";
 	}
 	//@RequestMapping(value="/save", method=RequestMethod.GET)
 	@PostMapping("/save")
-	public String guardar(@RequestParam("nombre") String nombre, @RequestParam("descripcion") String descripcion){
-		System.out.println("Nombre Categoria: " + nombre);
-		System.out.println("Descripción: " + descripcion);
+	public String guardar(@RequestParam("nombre_categoria") String nombre_categoria, @RequestParam("descripción") String descripción){
+		System.out.println("Nombre Categoria: " + nombre_categoria);
+		System.out.println("Descripción: " + descripción);
 		return "categoriasTrip/listCategoria";
 	}
 }

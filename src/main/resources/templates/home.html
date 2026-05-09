@@ -76,7 +76,7 @@
             <h6 class="card-title"><strong>Categoría: </strong> <span>Aventura</span></h6>
             <h6 class="card-title"><strong>Publicado: </strong> <span th:text=${trip.fecha}> </span></h6>
             <p th:text=${trip.descripción}></p>
-            <p><a class="btn btn-secondary" href="#" role="button">Ver detalles &raquo;</a></p>
+            <p><a class="btn btn-secondary" th:href="@{/trips/view/{id} (id=${trip.id})}" role="button">Ver detalles &raquo;</a></p>
           </div>
         </div>          
 		  <hr>	

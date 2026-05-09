@@ -21,7 +21,7 @@ public class TripController {
 	public String verDetalle(@PathVariable("id") int idTrip, Model model) {
 		Trip trip = tripServices.buscarPorId(idTrip); 
 		System.out.println("Trip: " + idTrip);
-		model.addAttribute("Trip" , trip);
+		model.addAttribute("trip" , trip);
 		return "trips/detalle";
 	}
 	@GetMapping("/delete")
