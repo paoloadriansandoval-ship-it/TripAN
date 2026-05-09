@@ -9,10 +9,10 @@
 
     <title>TripApp | Aplicación para publicar Ofertas de Vacil en El Salvador.</title>
     <!-- Bootstrap core CSS -->
-    <link th:href="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link th:href="@{bootstrap/css/jumbotron.css}" rel="stylesheet">
-    <link th:href="@{bootstrap/css/sticky-footer-navbar.css}" rel="stylesheet">
+    <link th:href="@{/bootstrap/css/jumbotron.css}" rel="stylesheet">
+    <link th:href="@{/bootstrap/css/sticky-footer-navbar.css}" rel="stylesheet">
   </head>
 
   <body>
@@ -49,7 +49,7 @@
         <div class="card">
           <h4 class="card-header"><strong>Datos de la categoría</strong></h4>              
           <div class="card-body">
-            <form th:action="@{/categoria/save}" method="post">              
+            <form th:action="@{/categorias/save}" method="post">              
               <div class="row">
                 <div class="col-md-6"> 
                   <div class="form-group">
@@ -88,6 +88,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script th:src="@{bootstrap/js/bootstrap.min.js}"></script>     
+    <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>     
   </body>
 </html>

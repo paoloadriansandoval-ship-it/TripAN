@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -29,5 +30,15 @@ public class TripController {
 		System.out.println("idTrip es: " + idTrip);
 		model.addAttribute("id" , idTrip);
 		return "mensaje";
+	}
+	@GetMapping("/create")
+	public String crear() {
+		return "trips/formTrip";
+	}
+	@PostMapping("/save")
+	public String guardar(@RequestParam("nombre") String nombre, @RequestParam("descripcion") String descripción){
+		System.out.println("Nombre del viaje: " + nombre);
+		System.out.println("Descripción: " + descripción);
+		return "trips/listTrips";
 	}
 }
