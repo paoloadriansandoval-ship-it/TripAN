@@ -7,13 +7,13 @@ public class Trip {
 	private String nombre_trip;
 	private String descripción;
 	private double costo;
+	private Integer destacado;
+	private String imagen = "noimage.png";
 	private int calificación;
-	private String imagen;
 	private String detalles;
 	private boolean activo;
 	private Date fecha;
 	private int IdCategoria;
-	private Integer destacado;
 	
 	public Integer getId() {
 		return id;
