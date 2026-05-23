@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping(value="/categorías")
+@RequestMapping(value="/categoria")
 public class categoriaTripController {
 	//@RequestMapping(value="/index", method=RequestMethod.GET)
 	@GetMapping("/index")
@@ -17,13 +17,13 @@ public class categoriaTripController {
 	//@RequestMapping(value="/create", method=RequestMethod.GET)
 	@GetMapping("/create")
 	public String crear() {
-		return "categoriasTrip/listCategoria";
+		return "categoriasTrip/formCategoria";
 	}
 	//@RequestMapping(value="/save", method=RequestMethod.GET)
 	@PostMapping("/save")
-	public String guardar(@RequestParam("nombre") String nombre, @RequestParam("descripcion") String descripcion){
-		System.out.println("Nombre Categoria: " + nombre);
-		System.out.println("Descripción: " + descripcion);
+	public String guardar(@RequestParam("nombre") String nombre_categoria, @RequestParam("descripcion") String descripción){
+		System.out.println("Nombre Categoria: " + nombre_categoria);
+		System.out.println("Descripción: " + descripción);
 		return "categoriasTrip/listCategoria";
 	}
 }

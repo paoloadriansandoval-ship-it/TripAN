@@ -75,5 +75,7 @@ public class TripServicesImpl implements ITripServices{
 				return trip;
 		return null;
 	}
-	
+	public void guardar (Trip trip) {
+		lista.add(trip);
+	}
 }
